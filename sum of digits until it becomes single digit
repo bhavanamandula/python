@@ -1,0 +1,7 @@
+def b(n):
+    sum_n = sum(map(int, str(n)))
+    if sum_n > 9:
+        return b(sum_n)
+    return sum_n
+
+print(b(18954321))
